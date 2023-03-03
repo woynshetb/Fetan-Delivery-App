@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "FetanDelivery",
+    "slug": "FetanDelivery",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "FetanDelivery"
+}
