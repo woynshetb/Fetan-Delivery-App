@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
+import { styled } from 'nativewind';
 
-
-export default function Onbarding_page() {
+const StyledView = styled(View)
+const StyledText = styled(Text)
+export default function OnbardingPage() {
   return (
-    <View style={{
-backgroundColor :'white'
-    }}>
-      <Text> Onboarding page</Text>
-    </View>
+    <StyledView className="flex-1 items-center justify-center">
+      <StyledText className="text-slate-80">Try Me </StyledText>
+    </StyledView>
   )
 }

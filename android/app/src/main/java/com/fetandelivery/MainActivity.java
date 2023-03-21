@@ -71,4 +71,9 @@ public class MainActivity extends ReactActivity {
   protected void onCreate(Bundle savedInstanceState) {
    super.onCreate(null);
 }
+@Override
+public void onConfigurationChanged(Configuration newConfig){
+  super.onConfigurationChanged(newConfig);
+  getReactInstanceManager().onConfigurationChanged(this,newConfig);
+}
 }
