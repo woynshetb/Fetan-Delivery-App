@@ -6,7 +6,7 @@ const StyledText = styled(Text)
 export default function OnbardingPage() {
   return (
     <StyledView className="flex-1 items-center justify-center">
-      <StyledText className="text-slate-80">Try Me </StyledText>
+      <StyledText className="text-red-500">Try Me b/c </StyledText>
     </StyledView>
   )
 }
