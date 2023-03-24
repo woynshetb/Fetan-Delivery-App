@@ -5,6 +5,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { ArrowLeftIcon, ChevronRightIcon, QuestionMarkCircleIcon, StarIcon } from 'react-native-heroicons/outline';
 
 import DishRow from './component/DishRow';
+import BasketIcon from './component/BasketIcon';
 export default function RestaurantPage({}) {
     const navigation = useNavigation();
     const {params:{
@@ -28,7 +29,9 @@ export default function RestaurantPage({}) {
 
     
   return (
-   <ScrollView>
+  <>
+  <BasketIcon/>
+     <ScrollView>
     <View>
         <Image
             source={{
@@ -67,7 +70,7 @@ export default function RestaurantPage({}) {
             <ChevronRightIcon color={"#00bbcc"} opacity={0.5} size={22}/>
         </TouchableOpacity>
     </View>
-    <View>
+    <View className="pb-36">
         <Text className="px-4 pt-6 mb-3 font-bold text-xl">Menu</Text>
         {dishes.map((dish)=>(<DishRow 
   key={dish.key}
@@ -80,5 +83,6 @@ export default function RestaurantPage({}) {
         />))}
     </View>
    </ScrollView>
+  </>
   )
 }
