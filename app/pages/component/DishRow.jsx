@@ -63,10 +63,10 @@ export default function DishRow({
     {isPressed &&(
         <View className=" bg-white px-4">
             <View className="flex-row items-center space-x-2 pb-3">
-            <TouchableOpacity onPress={removeItemFromBasket}>
+            <TouchableOpacity disabled={!items.length} onPress={removeItemFromBasket}>
                 <MinusCircleIcon
 
-                    color="#00BBCC"
+                    color={  !items.length > 0 ?"gray" :  "#00BBCC"}
                     size={40}
                 />
             </TouchableOpacity>
