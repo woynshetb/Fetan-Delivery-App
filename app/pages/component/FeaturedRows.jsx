@@ -35,7 +35,8 @@ export default function FeaturedRows({id, title , description}) {
           name:"HEllo Baby",
           description:"Food is always good",
           price:500,
-          image:"https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          image:"https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          
 
         },
         {  key:2,
