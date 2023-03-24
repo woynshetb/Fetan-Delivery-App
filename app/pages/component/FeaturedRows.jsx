@@ -31,7 +31,7 @@ export default function FeaturedRows({id, title , description}) {
        short_description="This is a Test description"
        dishes={[
         {  key:1,
-          id:"1",
+          id:1,
           name:"HEllo Baby",
           description:"Food is always good",
           price:500,
@@ -40,7 +40,7 @@ export default function FeaturedRows({id, title , description}) {
 
         },
         {  key:2,
-          id:"2",
+          id:2,
           name:"HEllo Baby",
           description:"Food is always good",
           price:500,
@@ -48,7 +48,7 @@ export default function FeaturedRows({id, title , description}) {
 
         },
         {  key:3,
-          id:"3",
+          id:3,
           name:"HEllo Baby",
           description:"Food is always good",
           price:500,

@@ -12,6 +12,8 @@ import OnbardingPage from './app/pages/Onbarding_page';
 // styles related 
 import { TailwindProvider } from 'tailwindcss-react-native';
 import RestaurantPage from './app/pages/RestaurantPage';
+import { store } from './store'
+import { Provider } from 'react-redux'
 
 
 const Stack = createNativeStackNavigator();
@@ -25,6 +27,9 @@ export default function App() {
   return (
     <TailwindProvider>
    <NavigationContainer>
+   <Provider store={store}>
+
+ 
      <Stack.Navigator>
      {/* <Stack.Screen
        name='Onboarding'
@@ -41,6 +46,7 @@ export default function App() {
 
       />
      </Stack.Navigator>
+     </Provider>
    </NavigationContainer>
    </TailwindProvider>
   );
