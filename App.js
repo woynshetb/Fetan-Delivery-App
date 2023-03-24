@@ -11,6 +11,7 @@ import OnbardingPage from './app/pages/Onbarding_page';
 
 // styles related 
 import { TailwindProvider } from 'tailwindcss-react-native';
+import RestaurantPage from './app/pages/RestaurantPage';
 
 
 const Stack = createNativeStackNavigator();
@@ -35,8 +36,8 @@ export default function App() {
         option ={{title:'Welcome'}}
       />
       <Stack.Screen
-       name="Profile"
-        component={ProfilePage}
+       name="Restaurant"
+        component={RestaurantPage}
 
       />
      </Stack.Navigator>

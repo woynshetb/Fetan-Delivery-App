@@ -49,7 +49,7 @@ className="h-7 w-7 bg-grey-300 p-4 rounded-full"
  <ScrollView style={{
   // backgroundColor:"#ececed"
  }}
- contentContainerStyle={{
+ contentContainerStyle   ={{
   paddingBottom:10
  }}
  >
@@ -58,7 +58,7 @@ className="h-7 w-7 bg-grey-300 p-4 rounded-full"
   
  {/* feature row */}
  <FeaturedRows id="1234" title="Featured " description={"paid placemment from our partner "} />
- <FeaturedRows id="1234" title="Featured " description={"paid placemment from our partner "} />
+ <FeaturedRows id="1234" title="Tasty Discount " description={"paid placemment from our partner "} />
  <FeaturedRows id="1234" title="Featured " description={"paid placemment from our partner "} />
 
  </ScrollView>
