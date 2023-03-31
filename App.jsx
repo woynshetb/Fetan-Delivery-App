@@ -5,8 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 // custom Components 
-import HomePage from './app/pages/Home_Page';
-import ProfilePage from './app/pages/Profile_Page';
+import HomePage from './app/pages/Home_Page';;
 import OnbardingPage from './app/pages/Onbarding_page';
 
 // styles related 
@@ -14,6 +13,7 @@ import { TailwindProvider } from 'tailwindcss-react-native';
 import RestaurantPage from './app/pages/RestaurantPage';
 import { store } from './store'
 import { Provider } from 'react-redux'
+import BasketPage from './app/pages/BasketPage';
 
 
 const Stack = createNativeStackNavigator();
@@ -43,6 +43,11 @@ export default function App() {
       <Stack.Screen
        name="Restaurant"
         component={RestaurantPage}
+
+      />
+       <Stack.Screen
+       name="Basket"
+        component={BasketPage}
 
       />
      </Stack.Navigator>
